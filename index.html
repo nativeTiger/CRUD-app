@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CURD</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form>
+                    <div>
+                        <label>First Name*</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div>
+                        <label>Last Name*</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div>
+                        <label>Phone No.</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Phone No</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+
+</html>
