@@ -72,10 +72,10 @@ const onEdit = td => {
 
 // updating the td
 const updateRecord = formData => {
-    selcetRowFirst = formData.firstName;
-    selectedRowSecond = formData.lastNameId;
-    selectedRowThird = formData.phoneNumber;
-    selcetRowFourth = formData.city;
+    selectedRow.cells[0].innerText = formData.firstName;
+    selectedRow.cells[1].innerText = formData.lastName;
+    selectedRow.cells[2].innerText = formData.phoneNumber;
+    selectedRow.cells[3].innerText = formData.city;
 };
 
 //deleting the td
