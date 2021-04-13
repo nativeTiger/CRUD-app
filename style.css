@@ -2,6 +2,10 @@ body>table {
     width: 80%;
 }
 
+.title {
+    text-align: center;
+}
+
 table {
     border-collapse: collapse;
 }
