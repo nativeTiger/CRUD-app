@@ -19,7 +19,7 @@ const onFormSubmit = e => {
         updateRecord(readData);
     }
     resetForm();
-}
+};
 
 // reseting the form data
 const resetForm = () => {
@@ -28,7 +28,7 @@ const resetForm = () => {
     phoneNumberId.value = "";
     cityId.value = "";
     selectedRow = null;
-}
+};
 
 //reading data from the form
 const readFormData = () => {
@@ -64,11 +64,11 @@ const insertNewRecord = (data) => {
 // editing the particular td
 const onEdit = td => {
     selectedRow = td.parentElement.parentElement;
-    firstNameId.value = selectedRow.cells[0].innerHtml;
-    lastNameId.value = selectedRow.cells[1].innerHtml;
-    phoneNumberId.value = selectedRow.cells[2].innerHtml
-    cityId.value = selectedRow.cells[3].innerHtml
-}
+    firstNameId.value = selectedRow.cells[0].innerText;
+    lastNameId.value = selectedRow.cells[1].innerText;
+    phoneNumberId.value = selectedRow.cells[2].innerText;
+    cityId.value = selectedRow.cells[3].innerText;
+};
 
 // updating the td
 const updateRecord = formData => {
@@ -76,7 +76,7 @@ const updateRecord = formData => {
     selectedRowSecond = formData.lastNameId;
     selectedRowThird = formData.phoneNumber;
     selcetRowFourth = formData.city;
-}
+};
 
 //deleting the td
 const onDelete = td => {
@@ -85,7 +85,7 @@ const onDelete = td => {
         document.getElementById("employeeList").deleteRow(row.rowIndex);
         resetForm();
     }
-}
+};
 
 // eventlistener in the form
 form.addEventListener("submit", onFormSubmit);
